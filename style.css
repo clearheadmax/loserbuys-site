@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap');
+
+:root { --paper: #F6F3EC; --ink: #111111; --muted: #59534B; --red: #D9241A; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 Inter, system-ui, sans-serif; }
+a { color: var(--red); }
+.mast { background: var(--red); color: #fff; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; padding: 20px max(16px, calc(50% - 340px)) 12px; }
+.mast a { color: #fff; text-decoration: none; font: 34px/1 Anton, sans-serif; text-transform: uppercase; letter-spacing: .5px; }
+.mast span { font-weight: 800; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+main { max-width: 680px; margin: 0 auto; padding: 28px 16px 40px; }
+.kicker { color: var(--red); font-weight: 800; font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; margin: 0 0 8px; }
+h1 { font: 52px/1.02 Anton, sans-serif; text-transform: uppercase; margin: 0 0 18px; }
+h2 { font: 26px/1.1 Anton, sans-serif; text-transform: uppercase; border-top: 3px solid var(--ink); padding-top: 10px; margin: 34px 0 10px; }
+.deck { font-size: 19px; font-weight: 600; }
+p, li { color: var(--ink); }
+li { margin: 6px 0; }
+footer { max-width: 680px; margin: 0 auto; padding: 16px 16px 40px; border-top: 1px solid var(--ink); font-size: 13px; color: var(--muted); }
+@media (max-width: 420px) { h1 { font-size: 40px; } .mast a { font-size: 28px; } }
